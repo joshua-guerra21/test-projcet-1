@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports Guru</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <!-- <script src="http://cdn.date-fns.org/v2.0.0-alpha0/date_fns.min.js"></script>
+      <script>
+        dateFns.isToday(new Date())
+        //=> true
+      </script> -->
+      <script src="jquery.timeago.js" type="text/javascript"></script>
+      
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand ml-2 mt-0" href="index.html">
+              <img src="assets/images/info-pg_logo.png" height="22px" alt="">
+          </a>
+          <form class="form-inline">
+              <input class="form-control mr-sm-0" id="search2" type="search" placeholder="search a sports team..." aria-label="Search">
+              <button class="btn btn-danger my-0 my-sm-0 mr-2" type="submit" id="search-btn2">search</button>
+            </form>
+          </nav>
+          <br><br><br><br>
+    <section id="search-content" class="container">
+    <h1 id="teamName">Team Name</h1>
+    <h3 id="sportType">Sport Type</h3>
+    <br>
+    <div id="img-and-facts" class="container p-0 mb-5 bg-white">
+      <div class="row">
+        <div class="col-md-8 col-sm-7">
+          <img id="team-img" src="" alt="">
+        </div>
+        <div class="col-md-4 col-sm-5 p-4">
+          <img id="team-logo" src="">
+          <div id="facts" class="pt-4">
+            <h2>League:</h2>
+              <p class="fact" id="league"></p>
+              <!-- <br> -->
+            <h2>Stadium:</h2>
+              <p class="fact" id="stadium"></p>
+            <h2>Location:</h2>
+              <p class="fact" id="location"></p>
+            <h2>Year Formed:</h2>
+              <p class="fact" id="year-formed"></p>
+            <h2>Manager:</h2>
+              <p class="fact" id="manager"></p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="description-sect">
+      <h3 id="desc-header">Team Description</h3>
+      <p id="description"></p>
+    </div>
+    <br><br><br>
+    
+    <div id="description-sect">
+      <h1>Related News Articles</h1><br>
+      <div id="article-previews" class="card-deck"></div>
+    </div>
+    <br>
+    <br>
+    <div id="scroll-btn" class="text-center">
+      <button id="scrollTop" class="btn btn-primary" title="back-to-top" onclick="topFunction()">Back to Top</button>
+    </div>
+    <br>
+    <br>
+    <br>
+  </section>
+  <div id="footer"></div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
